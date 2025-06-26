@@ -1,4 +1,18 @@
- <h1 align="center">� Himansh Sharma - Portfolio</h1>
+ <h1 align="center">🚀 Himansh Sharma - Portfolio</h1>
+
+<p align="center">
+  A modern, responsive portfolio website showcasing my journey as a Full-Stack Developer. Built with cutting-edge web technologies, featuring smooth animations, clean design, and an intuitive user experience. The portfolio highlights my skills, projects, and professional experience through an engaging dark-themed interface with interactive purple accents and hover effects.
+</p>
+
+<div align="center">
+    <img src="https://github.com/himanshsharmaa/me/blob/main/images/project/project-image.png?raw=true" alt="Portfolio Header" />
+</div>
+
+------
+
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=a855f7&center=true&vCenter=true&width=435&lines=Full-Stack+Developer;Creative+Problem+Solver;Modern+Web+Technologies;Always+Learning" alt="Typing SVG">
+</p>ter">� Himansh Sharma - Portfolio</h1>
 
 <p align="center">
   A modern, responsive portfolio website showcasing my journey as a Full-Stack Developer. Built with cutting-edge web technologies, featuring smooth animations, clean design, and an intuitive user experience. The portfolio highlights my skills, projects, and professional experience through an engaging dark-themed interface with interactive elements.
