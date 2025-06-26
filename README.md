@@ -46,17 +46,6 @@ cd portfolio</code></pre>
   <li>Open <code>index.html</code> in your preferred web browser:
     <pre><code>open index.html</code></pre>
   </li>
-  <li>Or serve it using a local server:
-    <pre><code># Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx serve .
-
-# Using PHP
-php -S localhost:8000</code></pre>
-  </li>
-</ol>
 
 <h2 align="left">� Live Demo</h2>
 <p>
