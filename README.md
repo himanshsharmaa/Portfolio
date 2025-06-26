@@ -1,6 +1,30 @@
  <h1 align="center">🚀 Himansh Sharma - Portfolio</h1>
+<h2 align="left">🚀 Getting Started</h2>
+<ol>
+  <li>Clone the repository:
+    <pre><code>git clone https://github.com/himanshsharmaa/me.git
+cd me</code></pre>
+  </li>
+  <li>Open <code>index.html</code> in your preferred web browser:
+    <pre><code>open index.html</code></pre>
+  </li>
+  <li>Or serve it using a local server:
+    <pre><code># Using Python
+python -m http.server 8000
 
-<p align="center">
+# Using Node.js
+npx serve .
+
+# Using PHP
+php -S localhost:8000</code></pre>
+  </li>
+</ol>
+
+<h2 align="left">💡 Live Demo</h2>
+<p>
+  🌐 <strong>Live Website:</strong> <a href="https://himanshsharmaa.me/" target="_blank">https://himanshsharmaa.me</a><br>
+  📱 <strong>GitHub Pages:</strong> <a href="https://himanshsharmaa.github.io/me/" target="_blank">https://himanshsharmaa.github.io/me</a>
+</p>nter">
   A modern, responsive portfolio website showcasing my journey as a Full-Stack Developer. Built with cutting-edge web technologies, featuring smooth animations, clean design, and an intuitive user experience. The portfolio highlights my skills, projects, and professional experience through an engaging dark-themed interface with interactive purple accents and hover effects.
 </p>
 
@@ -32,11 +56,14 @@
 <ul>
   <li><strong>Responsive Design</strong>: Optimized for all devices and screen sizes with mobile-first approach.</li>
   <li><strong>Dark Mode Interface</strong>: Professional dark theme with smooth transitions and eye-friendly design.</li>
-  <li><strong>Interactive Navigation</strong>: Smooth scrolling navigation with animated hover effects.</li>
+  <li><strong>Interactive Navigation</strong>: Smooth scrolling navigation with animated hover effects and mobile hamburger menu.</li>
+  <li><strong>Purple Accent Theme</strong>: Consistent purple color scheme with elegant hover effects throughout.</li>
+  <li><strong>Enhanced Social Links</strong>: Interactive social media buttons with scale and glow effects.</li>
   <li><strong>Project Showcase</strong>: Detailed project presentations with live demos and GitHub links.</li>
-  <li><strong>Professional Resume</strong>: Integrated resume section with downloadable PDF.</li>
-  <li><strong>Contact Integration</strong>: Easy-to-use contact form with social media links.</li>
-  <li><strong>Modern Animations</strong>: Engaging CSS animations and transitions using Animate.css.</li>
+  <li><strong>Professional Resume</strong>: Integrated resume section with downloadable PDF and timeline layout.</li>
+  <li><strong>Contact Integration</strong>: Easy-to-use contact form with enhanced submit button styling.</li>
+  <li><strong>Modern Animations</strong>: Engaging CSS animations and transitions with hover effects.</li>
+  <li><strong>Mobile Optimized</strong>: Fixed mobile view issues with improved timeline and navigation.</li>
 </ul>
 
 <h2 align="left">🔧 Tech Stack</h2>
@@ -73,6 +100,15 @@ cd portfolio</code></pre>
   <li><strong>Projects</strong>: Showcase of featured projects with live demos and source code.</li>
   <li><strong>Resume</strong>: Professional experience, education, and skills with downloadable PDF.</li>
   <li><strong>Contact</strong>: Multiple ways to get in touch including social media links.</li>
+</ul>
+
+<h2 align="left">🔮 Recent Updates</h2>
+<ul>
+  <li><strong>✅ Mobile Optimization</strong>: Fixed mobile view issues with hamburger menu and timeline layout.</li>
+  <li><strong>✅ Purple Theme Enhancement</strong>: Added consistent purple accent colors with hover effects.</li>
+  <li><strong>✅ Interactive Elements</strong>: Enhanced social links, buttons, and copyright link with animations.</li>
+  <li><strong>✅ Custom Domain</strong>: Deployed to custom domain with Cloudflare integration.</li>
+  <li><strong>✅ Responsive Timeline</strong>: Improved experience section layout for all screen sizes.</li>
 </ul>
 
 <h2 align="left">🔮 Future Enhancements</h2>
