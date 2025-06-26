@@ -1,9 +1,8 @@
 <h1 align="center">🚀 Himansh Sharma - Portfolio</h1>
 
-<h2 align="left">💡 Live Demo</h2>
+<h2 align="left">�️ Local Development</h2>
 <p>
-  🌐 <strong>Live Website:</strong> <a href="https://himanshsharmaa.me/" target="_blank">https://himanshsharmaa.me</a><br>
-  📱 <strong>GitHub Pages:</strong> <a href="https://himanshsharmaa.github.io/me/" target="_blank">https://himanshsharmaa.github.io/me</a>
+  This portfolio is designed to run locally and can be easily customized for your needs.
 </p>
 
 <p align="center">
@@ -28,8 +27,7 @@
 - 📧 **Contact Integration**: Direct email functionality and social media links
 - 🎯 **Project Showcase**: Dynamic project gallery with live demos and GitHub links
 - ⚡ **Performance Optimized**: Fast loading times with optimized assets
-- 🌐 **Custom Domain**: Deployed with custom domain (himanshsharmaa.me) via GitHub Pages
-- 🎨 **Timeline Section**: Professional experience and education timeline
+-  **Timeline Section**: Professional experience and education timeline
 - 📱 **Mobile Navigation**: Enhanced hamburger menu with smooth animations
 
 ## 🛠️ Tech Stack
@@ -39,7 +37,6 @@
 - **Icons**: Unicons for consistent iconography
 - **Fonts**: Google Fonts for typography
 - **Animations**: CSS3 transitions and keyframes
-- **Deployment**: GitHub Pages with Cloudflare DNS
 - **Version Control**: Git & GitHub
 
 ## 🚀 Getting Started
@@ -50,7 +47,7 @@
 - Basic knowledge of HTML/CSS/JS (for customization)
 
 ### Local Development
-1. **Clone the repository**
+1. **Clone or download the repository**
    ```bash
    git clone https://github.com/himanshsharmaa/me.git
    cd me
@@ -60,12 +57,15 @@
    ```bash
    # Simply open index.html in your preferred browser
    # Or use a local server like Live Server in VS Code
+   # Or use Python's built-in server:
+   python -m http.server 8000
    ```
 
 3. **Customize as needed**
    - Update content in `index.html`
    - Modify styles in `css/style.css`
    - Add your own images to `images/` folder
+   - Replace `Resume-1.pdf` with your own resume
 
 ## 📁 Project Structure
 
@@ -73,7 +73,6 @@
 portfolio/
 ├── index.html              # Main HTML file
 ├── README.md              # Project documentation
-├── CNAME                  # Custom domain configuration
 ├── Resume-1.pdf           # Downloadable resume
 ├── css/
 │   ├── bootstrap.min.css  # Bootstrap framework
@@ -101,20 +100,22 @@ portfolio/
 - **Modern Typography**: Clean, readable fonts with proper hierarchy
 - **Optimized Images**: Compressed and responsive image loading
 
-## 🌐 Deployment
+## 🔧 How to Use
 
-This portfolio is deployed using:
-- **GitHub Pages**: Primary hosting platform
-- **Custom Domain**: himanshsharmaa.me
-- **Cloudflare**: DNS management and CDN
-- **SSL Certificate**: Automatic HTTPS via GitHub Pages
+This portfolio template is ready to use and easy to customize:
 
-### Deployment Steps
-1. Push code to GitHub repository
-2. Enable GitHub Pages in repository settings
-3. Configure custom domain in CNAME file
-4. Set up DNS records with Cloudflare
-5. Verify SSL certificate activation
+### Customization Options
+- **Personal Information**: Update your name, title, and bio in `index.html`
+- **Projects**: Replace project images and descriptions with your own work
+- **Resume**: Replace `Resume-1.pdf` with your updated resume
+- **Colors**: Modify the purple theme colors in `css/style.css`
+- **Social Links**: Update social media links to point to your profiles
+- **Images**: Replace profile and project images with your own
+
+### Running Locally
+- Open `index.html` directly in any modern browser
+- Use VS Code with Live Server extension for development
+- Use Python's built-in server: `python -m http.server 8000`
 
 ## 📈 Recent Updates
 
@@ -124,8 +125,8 @@ This portfolio is deployed using:
 - ✅ Fixed timeline layout for better mobile experience
 - ✅ Added hover effects to all interactive elements
 - ✅ Optimized images and loading performance
-- ✅ Set up custom domain with Cloudflare DNS
 - ✅ Enhanced README documentation
+- ✅ Added detailed customization instructions
 
 ## 📞 Contact
 
