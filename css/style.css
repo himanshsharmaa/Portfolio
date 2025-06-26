@@ -152,12 +152,16 @@ body::-webkit-scrollbar-thumb {
     border-radius: 50%;
     background: transparent;
     border: 2px solid transparent;
-    font-family: 'unicons', sans-serif;
+    position: relative;
+}
+
+.social-links a i {
+    font-size: 1.5rem;
     line-height: 1;
 }
 
 .social-links a:before {
-    font-family: 'unicons', sans-serif;
+    font-family: 'unicons', 'Font Awesome 6 Brands', sans-serif !important;
     font-style: normal;
     font-weight: normal;
     font-variant: normal;
@@ -173,6 +177,10 @@ body::-webkit-scrollbar-thumb {
     border-color: var(--primary-color);
     transform: translateY(-4px) scale(1.1);
     box-shadow: 0 8px 20px rgba(168, 85, 247, 0.4);
+}
+
+.social-links a:hover i {
+    color: var(--primary-color);
 }
 
 .hero-image-container {
@@ -564,12 +572,16 @@ body::-webkit-scrollbar-thumb {
   border-radius: 50%;
   background: transparent;
   border: 2px solid transparent;
-  font-family: 'unicons', sans-serif;
+  position: relative;
+}
+
+.footer-social-links a i {
+  font-size: 1.5rem;
   line-height: 1;
 }
 
 .footer-social-links a:before {
-  font-family: 'unicons', sans-serif;
+  font-family: 'unicons', 'Font Awesome 6 Brands', sans-serif !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -585,6 +597,10 @@ body::-webkit-scrollbar-thumb {
   border-color: var(--primary-color);
   transform: translateY(-3px) scale(1.1);
   box-shadow: 0 5px 15px rgba(168, 85, 247, 0.3);
+}
+
+.footer-social-links a:hover i {
+  color: var(--primary-color);
 }
 
 /* HERO SECTION ANIMATIONS */
