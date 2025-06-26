@@ -145,12 +145,21 @@ body::-webkit-scrollbar-thumb {
 .social-links a {
     color: var(--gray-400);
     font-size: 1.5rem;
-    transition: color .3s;
+    transition: all 0.3s ease;
     text-decoration: none;
+    display: inline-block;
+    padding: 0.75rem;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid transparent;
 }
 
 .social-links a:hover {
-    color: var(--primary-color); /* Use variable */
+    color: var(--primary-color);
+    background: rgba(168, 85, 247, 0.1);
+    border-color: var(--primary-color);
+    transform: translateY(-4px) scale(1.1);
+    box-shadow: 0 8px 20px rgba(168, 85, 247, 0.4);
 }
 
 .hero-image-container {
@@ -230,25 +239,39 @@ body::-webkit-scrollbar-thumb {
 /* Custom Primary Button */
 .btn-primary-custom {
   display: inline-block;
-  background-color: var(--primary-color); /* Use variable */
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color .3s;
+  transition: all 0.3s ease;
   text-decoration: none;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
 }
 
 .btn-primary-custom:hover {
-  background-color: #9333ea; /* Darker shade for hover */
+  background-color: #9333ea;
   color: #fff;
   text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.5);
+}
+
+.btn-primary-custom:active {
+  transform: translateY(0);
 }
 
 .btn-primary-custom i {
     margin-right: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.btn-primary-custom:hover i {
+    transform: scale(1.1);
 }
 
 
@@ -453,18 +476,28 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact-form .form-control-submit-button {
-  background-color: var(--primary-color); /* Use variable */
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   padding: 1rem 2rem;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   font-weight: 600;
   cursor: pointer;
-  transition: background-color .3s;
+  transition: all 0.3s ease;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
 }
 
 .contact-form .form-control-submit-button:hover {
   background-color: #9333ea;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.5);
+}
+
+.contact-form .form-control-submit-button:active {
+  transform: translateY(0);
 }
 
 /* Footer */
@@ -481,13 +514,22 @@ body::-webkit-scrollbar-thumb {
 .footer-social-links a {
   color: var(--gray-400);
   font-size: 1.5rem;
-  transition: color .3s;
+  transition: all 0.3s ease;
   margin-left: 1.5rem;
   text-decoration: none;
+  display: inline-block;
+  padding: 0.5rem;
+  border-radius: 50%;
+  background: transparent;
+  border: 2px solid transparent;
 }
 
 .footer-social-links a:hover {
-  color: var(--primary-color); /* Use variable */
+  color: var(--primary-color);
+  background: rgba(168, 85, 247, 0.1);
+  border-color: var(--primary-color);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(168, 85, 247, 0.3);
 }
 
 /* HERO SECTION ANIMATIONS */
