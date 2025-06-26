@@ -511,6 +511,35 @@ body::-webkit-scrollbar-thumb {
   font-size: 0.875rem;
 }
 
+.copyright-text a {
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: 600;
+}
+
+.copyright-text a:hover {
+  color: #9333ea;
+  text-shadow: 0 0 8px rgba(168, 85, 247, 0.6);
+  transform: scale(1.05);
+}
+
+.copyright-text a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--primary-color), #9333ea);
+  transition: width 0.3s ease;
+}
+
+.copyright-text a:hover::after {
+  width: 100%;
+}
+
 .footer-social-links a {
   color: var(--gray-400);
   font-size: 1.5rem;
