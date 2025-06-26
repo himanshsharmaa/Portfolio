@@ -1,6 +1,6 @@
 <h1 align="center">🚀 Himansh Sharma - Portfolio</h1>
 
-<p>
+<p align="center">
   This portfolio is designed to run locally and can be easily customized for your needs.
 </p>
 
