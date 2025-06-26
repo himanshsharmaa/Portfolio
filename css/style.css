@@ -137,26 +137,23 @@ body::-webkit-scrollbar-thumb {
 
 .social-links {
     display: flex;
-    gap: 0.5rem;
-    justify-content: flex-start; /* Align to the left */
+    gap: 0.375rem;
+    justify-content: flex-start;
     animation: fadeIn 1.6s ease-out;
 }
 
 .social-links a {
     color: var(--gray-400);
-    font-size: 1.5rem;
     transition: color 0.3s ease;
     text-decoration: none;
     display: inline-block;
-    padding: 0.5rem;
+    padding: 0.375rem;
     border-radius: 50%;
     background: transparent;
-    border: 2px solid transparent;
-    position: relative;
 }
 
 .social-links a i {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1;
     transition: color 0.3s ease;
 }
@@ -526,20 +523,17 @@ body::-webkit-scrollbar-thumb {
 
 .footer-social-links a {
   color: var(--gray-400);
-  font-size: 1.5rem;
   transition: color 0.3s ease;
   margin-left: 0.5rem;
   text-decoration: none;
   display: inline-block;
-  padding: 0.5rem;
+  padding: 0.375rem;
   border-radius: 50%;
   background: transparent;
-  border: 2px solid transparent;
-  position: relative;
 }
 
 .footer-social-links a i {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   line-height: 1;
   transition: color 0.3s ease;
 }
@@ -694,8 +688,8 @@ body::-webkit-scrollbar-thumb {
   }
 
   .footer-social-links a {
-    margin-left: 0.75rem;
-    margin-right: 0.75rem;
+    margin-left: 0.375rem;
+    margin-right: 0.375rem;
   }
 }
 
