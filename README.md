@@ -5,7 +5,7 @@
 </p>
 
 <div align="center">
-    <img src="https://github.com/himanshsharmaa/portfolio/blob/main/images/project/project-image01.png?raw=true" alt="Portfolio Header" />
+    <img src="https://github.com/himanshsharmaa/portfolio/blob/main/images/project/project-image.png?raw=true" alt="Portfolio Header" />
 </div>
 
 ------
