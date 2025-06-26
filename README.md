@@ -49,7 +49,7 @@ cd portfolio</code></pre>
 
 <h2 align="left">� Live Demo</h2>
 <p>
-  🌐 <strong>Live Website:</strong> <a href="https://himanshsharmaa.github.io/portfolio/" target="_blank">View Portfolio</a>
+  🌐 <strong>Live Website:</strong> <a href="https://himanshsharmaa.github.io/me/" target="_blank">View Portfolio</a>
 </p>
 
 <h2 align="left">� Sections</h2>
