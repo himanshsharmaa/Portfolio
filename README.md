@@ -1,5 +1,10 @@
 <h1 align="center">🚀 Himansh Sharma - Portfolio</h1>
 
+## 💡 Live Demo
+<p align="center">
+  📱 <strong>GitHub Pages:</strong> <a href="https://himanshsharmaa.github.io/me/" target="_blank">https://himanshsharmaa.github.io/me</a>
+</p>
+
 <p align="center">
   This portfolio is designed to run locally and can be easily customized for your needs.
 </p>
@@ -26,7 +31,7 @@
 - 📧 **Contact Integration**: Direct email functionality and social media links
 - 🎯 **Project Showcase**: Dynamic project gallery with live demos and GitHub links
 - ⚡ **Performance Optimized**: Fast loading times with optimized assets
--  **Timeline Section**: Professional experience and education timeline
+- 🎨 **Timeline Section**: Professional experience and education timeline
 - 📱 **Mobile Navigation**: Enhanced hamburger menu with smooth animations
 
 ## 🛠️ Tech Stack
