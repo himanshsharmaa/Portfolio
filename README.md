@@ -1,30 +1,12 @@
- <h1 align="center">🚀 Himansh Sharma - Portfolio</h1>
-<h2 align="left">🚀 Getting Started</h2>
-<ol>
-  <li>Clone the repository:
-    <pre><code>git clone https://github.com/himanshsharmaa/me.git
-cd me</code></pre>
-  </li>
-  <li>Open <code>index.html</code> in your preferred web browser:
-    <pre><code>open index.html</code></pre>
-  </li>
-  <li>Or serve it using a local server:
-    <pre><code># Using Python
-python -m http.server 8000
-
-# Using Node.js
-npx serve .
-
-# Using PHP
-php -S localhost:8000</code></pre>
-  </li>
-</ol>
+<h1 align="center">🚀 Himansh Sharma - Portfolio</h1>
 
 <h2 align="left">💡 Live Demo</h2>
 <p>
   🌐 <strong>Live Website:</strong> <a href="https://himanshsharmaa.me/" target="_blank">https://himanshsharmaa.me</a><br>
   📱 <strong>GitHub Pages:</strong> <a href="https://himanshsharmaa.github.io/me/" target="_blank">https://himanshsharmaa.github.io/me</a>
-</p>nter">
+</p>
+
+<p align="center">
   A modern, responsive portfolio website showcasing my journey as a Full-Stack Developer. Built with cutting-edge web technologies, featuring smooth animations, clean design, and an intuitive user experience. The portfolio highlights my skills, projects, and professional experience through an engaging dark-themed interface with interactive purple accents and hover effects.
 </p>
 
@@ -36,108 +18,136 @@ php -S localhost:8000</code></pre>
 
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=a855f7&center=true&vCenter=true&width=435&lines=Full-Stack+Developer;Creative+Problem+Solver;Modern+Web+Technologies;Always+Learning" alt="Typing SVG">
-</p>ter">� Himansh Sharma - Portfolio</h1>
-
-<p align="center">
-  A modern, responsive portfolio website showcasing my journey as a Full-Stack Developer. Built with cutting-edge web technologies, featuring smooth animations, clean design, and an intuitive user experience. The portfolio highlights my skills, projects, and professional experience through an engaging dark-themed interface with interactive elements.
 </p>
+
+## ✨ Features
+
+- 🎨 **Modern Design**: Clean, professional dark-themed interface with purple accent colors
+- 📱 **Fully Responsive**: Optimized for all devices - desktop, tablet, and mobile
+- 🚀 **Interactive Elements**: Smooth animations and hover effects using CSS3 and JavaScript
+- 📧 **Contact Integration**: Direct email functionality and social media links
+- 🎯 **Project Showcase**: Dynamic project gallery with live demos and GitHub links
+- ⚡ **Performance Optimized**: Fast loading times with optimized assets
+- 🌐 **Custom Domain**: Deployed with custom domain (himanshsharmaa.me) via GitHub Pages
+- 🎨 **Timeline Section**: Professional experience and education timeline
+- 📱 **Mobile Navigation**: Enhanced hamburger menu with smooth animations
+
+## 🛠️ Tech Stack
+
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Framework**: Bootstrap 5 for responsive design
+- **Icons**: Unicons for consistent iconography
+- **Fonts**: Google Fonts for typography
+- **Animations**: CSS3 transitions and keyframes
+- **Deployment**: GitHub Pages with Cloudflare DNS
+- **Version Control**: Git & GitHub
+
+## 🚀 Getting Started
+
+### Prerequisites
+- A modern web browser
+- Git (for development)
+- Basic knowledge of HTML/CSS/JS (for customization)
+
+### Local Development
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/himanshsharmaa/me.git
+   cd me
+   ```
+
+2. **Open in your browser**
+   ```bash
+   # Simply open index.html in your preferred browser
+   # Or use a local server like Live Server in VS Code
+   ```
+
+3. **Customize as needed**
+   - Update content in `index.html`
+   - Modify styles in `css/style.css`
+   - Add your own images to `images/` folder
+
+## 📁 Project Structure
+
+```
+portfolio/
+├── index.html              # Main HTML file
+├── README.md              # Project documentation
+├── CNAME                  # Custom domain configuration
+├── Resume-1.pdf           # Downloadable resume
+├── css/
+│   ├── bootstrap.min.css  # Bootstrap framework
+│   ├── style.css          # Custom styles
+│   └── unicons.css        # Icon fonts
+├── js/
+│   ├── custom.js          # Custom JavaScript
+│   ├── bootstrap.min.js   # Bootstrap JS
+│   ├── jquery-3.3.1.min.js
+│   ├── popper.min.js
+│   └── smoothscroll.js    # Smooth scrolling
+├── images/
+│   ├── project/           # Project screenshots
+│   └── undraw/           # SVG illustrations
+└── font/                  # Icon font files
+```
+
+## 🎨 UI/UX Highlights
+
+- **Purple Theme**: Consistent purple color scheme (#a855f7) for accents and hover effects
+- **Smooth Animations**: CSS transitions for all interactive elements
+- **Responsive Timeline**: Adapts beautifully from desktop to mobile
+- **Enhanced Mobile Menu**: Improved hamburger menu with better visibility
+- **Hover Effects**: Interactive buttons and links with purple glow effects
+- **Modern Typography**: Clean, readable fonts with proper hierarchy
+- **Optimized Images**: Compressed and responsive image loading
+
+## 🌐 Deployment
+
+This portfolio is deployed using:
+- **GitHub Pages**: Primary hosting platform
+- **Custom Domain**: himanshsharmaa.me
+- **Cloudflare**: DNS management and CDN
+- **SSL Certificate**: Automatic HTTPS via GitHub Pages
+
+### Deployment Steps
+1. Push code to GitHub repository
+2. Enable GitHub Pages in repository settings
+3. Configure custom domain in CNAME file
+4. Set up DNS records with Cloudflare
+5. Verify SSL certificate activation
+
+## 📈 Recent Updates
+
+- ✅ Enhanced mobile responsiveness and navigation
+- ✅ Applied consistent purple color theme throughout
+- ✅ Improved hamburger menu visibility and animation
+- ✅ Fixed timeline layout for better mobile experience
+- ✅ Added hover effects to all interactive elements
+- ✅ Optimized images and loading performance
+- ✅ Set up custom domain with Cloudflare DNS
+- ✅ Enhanced README documentation
+
+## 📞 Contact
 
 <div align="center">
-    <img src="https://github.com/himanshsharmaa/portfolio/blob/main/images/project/project-image.png?raw=true" alt="Portfolio Header" />
+  <a href="mailto:himanshsharmaa@example.com">
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email">
+  </a>
+  <a href="https://linkedin.com/in/himanshsharmaa" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
+  </a>
+  <a href="https://github.com/himanshsharmaa" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  </a>
 </div>
 
-------
+---
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=4CAF50&center=true&vCenter=true&width=435&lines=Full-Stack+Developer;Creative+Problem+Solver;Modern+Web+Technologies;Always+Learning" alt="Typing SVG">
+  <strong>💜 Made with passion and purple theme 💜</strong><br>
+  <em>© 2024 Himansh Sharma. All rights reserved.</em>
 </p>
 
-<h2 align="left">🌟 Features</h2>
-<ul>
-  <li><strong>Responsive Design</strong>: Optimized for all devices and screen sizes with mobile-first approach.</li>
-  <li><strong>Dark Mode Interface</strong>: Professional dark theme with smooth transitions and eye-friendly design.</li>
-  <li><strong>Interactive Navigation</strong>: Smooth scrolling navigation with animated hover effects and mobile hamburger menu.</li>
-  <li><strong>Purple Accent Theme</strong>: Consistent purple color scheme with elegant hover effects throughout.</li>
-  <li><strong>Enhanced Social Links</strong>: Interactive social media buttons with scale and glow effects.</li>
-  <li><strong>Project Showcase</strong>: Detailed project presentations with live demos and GitHub links.</li>
-  <li><strong>Professional Resume</strong>: Integrated resume section with downloadable PDF and timeline layout.</li>
-  <li><strong>Contact Integration</strong>: Easy-to-use contact form with enhanced submit button styling.</li>
-  <li><strong>Modern Animations</strong>: Engaging CSS animations and transitions with hover effects.</li>
-  <li><strong>Mobile Optimized</strong>: Fixed mobile view issues with improved timeline and navigation.</li>
-</ul>
-
-<h2 align="left">🔧 Tech Stack</h2>
-<p align="left">
-  <a href="https://www.html.com/" target="_blank"><img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/></a>
-  <a href="https://www.w3.org/Style/CSS/" target="_blank"><img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/></a>
-  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"><img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/></a>
-  <a href="https://getbootstrap.com/" target="_blank"><img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/></a>
-  <a href="https://jquery.com/" target="_blank"><img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/></a>
-  <a href="https://animate.style/" target="_blank"><img src="https://img.shields.io/badge/Animate.css-FF6B6B?style=for-the-badge&logo=css3&logoColor=white"/></a>
-  <a href="https://iconscout.com/unicons" target="_blank"><img src="https://img.shields.io/badge/Unicons-667EEA?style=for-the-badge&logo=iconify&logoColor=white"/></a>
-  <a href="https://github.com/" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=himanshsharmaa&color=blueviolet&style=flat-square&label=Profile+Views" alt="Profile Views">
 </p>
-
-<h2 align="left">� Getting Started</h2>
-<ol>
-  <li>Clone the repository:
-    <pre><code>git clone https://github.com/himanshsharmaa/portfolio.git
-cd portfolio</code></pre>
-  </li>
-  <li>Open <code>index.html</code> in your preferred web browser:
-    <pre><code>open index.html</code></pre>
-  </li>
-
-<h2 align="left">� Live Demo</h2>
-<p>
-  🌐 <strong>Live Website:</strong> <a href="https://himanshsharmaa.github.io/me/" target="_blank">View Portfolio</a>
-</p>
-
-<h2 align="left">� Sections</h2>
-<ul>
-  <li><strong>Hero Section</strong>: Eye-catching introduction with animated elements.</li>
-  <li><strong>About Me</strong>: Personal introduction and professional background.</li>
-  <li><strong>Projects</strong>: Showcase of featured projects with live demos and source code.</li>
-  <li><strong>Resume</strong>: Professional experience, education, and skills with downloadable PDF.</li>
-  <li><strong>Contact</strong>: Multiple ways to get in touch including social media links.</li>
-</ul>
-
-<h2 align="left">🔮 Recent Updates</h2>
-<ul>
-  <li><strong>✅ Mobile Optimization</strong>: Fixed mobile view issues with hamburger menu and timeline layout.</li>
-  <li><strong>✅ Purple Theme Enhancement</strong>: Added consistent purple accent colors with hover effects.</li>
-  <li><strong>✅ Interactive Elements</strong>: Enhanced social links, buttons, and copyright link with animations.</li>
-  <li><strong>✅ Custom Domain</strong>: Deployed to custom domain with Cloudflare integration.</li>
-  <li><strong>✅ Responsive Timeline</strong>: Improved experience section layout for all screen sizes.</li>
-</ul>
-
-<h2 align="left">🔮 Future Enhancements</h2>
-<ul>
-  <li><strong>Blog Section</strong>: Add a personal blog to share insights and experiences.</li>
-  <li><strong>Dark/Light Theme Toggle</strong>: Implement theme switching functionality.</li>
-  <li><strong>Project Filtering</strong>: Add category-based project filtering and search.</li>
-  <li><strong>Analytics Dashboard</strong>: Integrate visitor analytics and contact form submissions.</li>
-  <li><strong>Progressive Web App</strong>: Convert to PWA for better mobile experience.</li>
-  <li><strong>Multilingual Support</strong>: Add multiple language options for global reach.</li>
-</ul>
-
-<h2 align="left">📝 License</h2>
-<p align="left">This project is licensed under the <strong>MIT License</strong>.</p>
-
-<h2 align="left">🤝 Contributing</h2>
-<p>
-  Found a bug or have a feature request? Feel free to open an issue or submit a pull request! Your contributions are welcome.
-</p>
-
-<h2 align="left">📬 Connect With Me</h2>
-<p align="left">
-  <a href="mailto:talk.himanshsharma@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://linkedin.com/in/himanshsharmaa" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/></a>
-  <a href="https://github.com/himanshsharmaa" target="_blank"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
-  <a href="https://x.com/himanshsharmaa" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/></a>
-</p>
-
-------
-
-<p align="center">Made with ❤️ by <a href="https://github.com/himanshsharmaa">Himansh Sharma</a></p>
-
