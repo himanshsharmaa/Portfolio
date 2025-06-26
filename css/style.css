@@ -364,13 +364,13 @@ body::-webkit-scrollbar-thumb {
 
 .timeline-container {
   position: relative;
-  padding-left: 5rem; /* Space for the circle */
+  padding-left: 6rem; /* Increased space for larger circles */
 }
 
 .timeline-container::before {
   content: '';
   position: absolute;
-  left: 2.5rem;
+  left: 3rem;
   transform: translateX(-50%);
   top: 0;
   bottom: 0;
@@ -380,7 +380,7 @@ body::-webkit-scrollbar-thumb {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 4rem; /* More space between items */
+  margin-bottom: 5rem; /* More space between items */
 }
 
 .timeline-item:last-child {
@@ -389,27 +389,28 @@ body::-webkit-scrollbar-thumb {
 
 .timeline-year {
   position: absolute;
-  left: -5rem; /* Position in the padding area */
+  left: -6rem; /* Position in the expanded padding area */
   top: 0;
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
-  background-color: var(--gray-800);
-  border: 2px solid var(--border-color);
-  color: var(--gray-200);
+  background-color: var(--primary-color);
+  border: 3px solid var(--gray-900);
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1.1;
   z-index: 1;
+  padding: 0.5rem;
 }
 
 .timeline-content {
-  padding-left: 1.5rem;
-  padding-top: 1.5rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
 }
 
 .timeline-title {
