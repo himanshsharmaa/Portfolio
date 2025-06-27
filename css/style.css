@@ -777,12 +777,9 @@ body::-webkit-scrollbar-thumb {
     margin-top: 3rem;
   }
 
-  .about-section .row {
-    flex-direction: column;
-  }
-
-  .about-section .col-lg-6 {
-    width: 100%;
+  .about-section .about-content-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
   .tech-list {
