@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
 
-/* Updated: Removed card border hover, added skill tag hover effects - v2.2 */
+/* Updated: Removed card border hover, added skill tag hover effects - v2.3 - Fixed missing CSS dependencies */
 
 :root {
   --gray-900: #111827;
@@ -324,11 +324,6 @@ body::-webkit-scrollbar-thumb {
   height: 3px;
   background: linear-gradient(90deg, var(--primary-color), #9333ea);
   opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.about-card:hover::before {
-  opacity: 1;
 }
 
 .card-header {
@@ -366,8 +361,14 @@ body::-webkit-scrollbar-thumb {
   transition: max-height 0.5s ease;
 }
 
-.skills-grid.expanded {
+.skills-card .skills-grid.expanded {
   max-height: none;
+}
+
+/* Ensure achievements card is never affected by expansion */
+.achievements-card .achievements-list {
+  max-height: none !important;
+  overflow: visible !important;
 }
 
 .skill-category {
@@ -438,7 +439,7 @@ body::-webkit-scrollbar-thumb {
   transition: transform 0.3s ease;
 }
 
-.view-more-btn.expanded .view-more-icon {
+.skills-card .view-more-btn.expanded .view-more-icon {
   transform: rotate(180deg);
 }
 
