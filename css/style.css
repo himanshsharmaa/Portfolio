@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Account for fixed navbar */
 }
 
 body {
@@ -622,6 +623,12 @@ body::-webkit-scrollbar-thumb {
   .contact-section {
     padding: 2rem 0 1.5rem;
     min-height: calc(100vh - 80px);
+    align-items: flex-start; /* Allow content to start from top on mobile */
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .section-title {
