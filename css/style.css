@@ -15,6 +15,14 @@ html {
   scroll-padding-top: 80px; /* Account for fixed navbar */
 }
 
+body {/* Contact Section */
+.contact-section {
+  padding: 6rem 0; /* Increased gap */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 body {
   background-color: var(--gray-900);
   color: var(--gray-200);
@@ -69,8 +77,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .navbar.scrolled {
-    background-color: rgba(17, 24, 39, 0.7) !important; /* Dark background with opacity */
-    backdrop-filter: blur(9px);
+    background-color: rgba(17, 24, 39, 0.8) !important; /* Dark background with opacity */
+    backdrop-filter: blur(10px);
 }
 
 .navbar-brand {
@@ -211,16 +219,34 @@ body::-webkit-scrollbar-thumb {
 
 /* About Section */
 .about-section {
-  padding: 4rem 0;
+  padding: 6rem 0; /* Increased gap */
   min-height: 100vh;
   display: flex;
   align-items: center;
 }
 
 .about-text p {
-  font-size: 1.125rem;
+  font-size: 1.2rem; /* Slightly larger for better readability */
   color: var(--gray-400);
+  margin-bottom: 2rem; /* More space between paragraphs */
+  line-height: 1.7; /* Better line spacing */
+}
+
+.about-text p:last-child {
+  margin-bottom: 3rem; /* Extra space before skills section */
+}
+
+.skills-section {
+  margin-top: 2rem;
+}
+
+.skills-section h5 {
+  color: var(--gray-200);
+  font-size: 1.1rem;
+  font-weight: 600;
   margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .tech-list {
@@ -228,24 +254,29 @@ body::-webkit-scrollbar-thumb {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start; /* Align items to the start */
-  gap: 1rem;
-  margin-top: 1rem; /* Adjust space above the list */
+  justify-content: flex-start;
+  gap: 1.2rem; /* Increased gap between tech items */
+  margin-top: 0.5rem;
 }
 
 .tech-list li {
   background-color: var(--gray-800);
-  padding: 0.5rem 1rem;
-  border-radius: 9999px; /* Pill shape */
+  padding: 0.75rem 1.5rem; /* More padding for better touch targets */
+  border-radius: 9999px;
   border: 1px solid var(--border-color);
-  font-size: 0.875rem;
+  font-size: 0.9rem; /* Slightly larger text */
+  font-weight: 500; /* Medium weight for emphasis */
   color: var(--gray-200);
-  transition: background-color .3s, color .3s;
+  transition: all 0.3s ease; /* Smooth transitions */
+  cursor: default;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 .tech-list li:hover {
-    background-color: var(--primary-color); /* Use variable */
-    color: #fff;
+  background-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 4px 8px rgba(168, 85, 247, 0.3); /* Purple glow */
 }
 
 /* Custom Primary Button */
@@ -286,7 +317,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Project Section */
 .project-section {
-  padding: 4rem 0;
+  padding: 6rem 0; /* Increased gap */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -359,7 +390,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Resume Section */
 .resume-section {
-  padding: 4rem 0;
+  padding: 6rem 0; /* Increased gap */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -505,7 +536,9 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  width: 100%;
+  width: auto; /* Changed from 100% to auto */
+  max-width: 200px; /* Limit maximum width */
+  display: inline-block; /* Allow it to be inline */
   position: relative;
   overflow: hidden;
 }
