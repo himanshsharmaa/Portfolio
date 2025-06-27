@@ -249,6 +249,11 @@ body::-webkit-scrollbar-thumb {
   letter-spacing: 0.5px;
 }
 
+.custom-btn-group {
+  margin-top: 3rem; /* More space above button */
+  margin-bottom: 2rem;
+}
+
 .tech-list {
   list-style: none;
   padding: 0;
@@ -774,8 +779,13 @@ body::-webkit-scrollbar-thumb {
     padding-right: 1rem;
   }
 
-  .resume-section {
-    padding: 2rem 0 1.5rem; /* Match hero section responsive padding */
+  .about-section,
+  .project-section,
+  .resume-section,
+  .contact-section {
+    padding: 3rem 0 2rem; /* Increased gap for mobile */
+    min-height: calc(100vh - 80px);
+    align-items: flex-start;
   }
 
   .timeline-container {
