@@ -654,9 +654,9 @@ body::-webkit-scrollbar-thumb {
   .project-section,
   .resume-section,
   .contact-section {
-    padding: 2rem 0 1.5rem;
+    padding: 4rem 0 2rem; /* Increased gap for tablets */
     min-height: calc(100vh - 80px);
-    align-items: flex-start; /* Allow content to start from top on mobile */
+    align-items: flex-start;
   }
 
   .container {
