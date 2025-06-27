@@ -309,7 +309,7 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid var(--border-color);
   border-radius: 1.5rem;
   padding: 2rem;
-  transition: all 0.3s ease;
+  transition: border-color 0.3s ease;
   position: relative;
   overflow: hidden;
 }
@@ -331,9 +331,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-card:hover {
-  transform: translateY(-5px);
   border-color: rgba(168, 85, 247, 0.3);
-  box-shadow: 0 20px 40px rgba(168, 85, 247, 0.1);
 }
 
 .card-header {
@@ -382,7 +380,6 @@ body::-webkit-scrollbar-thumb {
 .skill-tag:hover {
   background: linear-gradient(135deg, var(--primary-color), #9333ea);
   color: white;
-  transform: translateY(-2px);
 }
 
 .achievements-list {
@@ -474,7 +471,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn-secondary-custom:hover {
-  background: var(--primary-color);
+  background-color: var(--primary-color);
   color: white;
   border-color: var(--primary-color);
   text-decoration: none;
@@ -483,42 +480,30 @@ body::-webkit-scrollbar-thumb {
 .btn-primary-custom {
   display: inline-flex;
   align-items: center;
-  background: linear-gradient(135deg, var(--primary-color), #9333ea);
+  background-color: var(--primary-color);
   color: #fff;
   border: none;
   padding: 1rem 2rem;
   border-radius: 0.75rem;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease;
   text-decoration: none;
-  position: relative;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3);
-}
-
-.btn-primary-custom::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-  transition: left 0.5s ease;
-}
-
-.btn-primary-custom:hover::before {
-  left: 100%;
+  gap: 0.5rem;
 }
 
 .btn-primary-custom:hover {
-  background: linear-gradient(135deg, #9333ea, #7c3aed);
+  background-color: #9333ea;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-primary-custom:active {
+  background-color: #7c3aed;
 }
 
 .btn-primary-custom i {
-  margin-right: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 /* Project Section */
