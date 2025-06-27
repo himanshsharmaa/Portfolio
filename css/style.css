@@ -211,7 +211,7 @@ body::-webkit-scrollbar-thumb {
 
 /* About Section */
 .about-section {
-  padding: 6rem 0; /* Increased gap */
+  padding: 12rem 0 6rem; /* Top padding aligns title with 4th grid line */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -314,7 +314,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Project Section */
 .project-section {
-  padding: 6rem 0; /* Increased gap */
+  padding: 12rem 0 6rem; /* Top padding aligns title with 4th grid line */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -387,7 +387,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Resume Section */
 .resume-section {
-  padding: 6rem 0; /* Increased gap */
+  padding: 12rem 0 6rem; /* Top padding aligns title with 4th grid line */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -475,7 +475,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Contact Section */
 .contact-section {
-  padding: 6rem 0; /* Increased gap */
+  padding: 12rem 0 6rem; /* Top padding aligns title with 4th grid line */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -662,7 +662,7 @@ body::-webkit-scrollbar-thumb {
   .project-section,
   .resume-section,
   .contact-section {
-    padding: 4rem 0 2rem; /* Increased gap for tablets */
+    padding: 9rem 0 4rem; /* 3rd grid line alignment for tablets */
     min-height: calc(100vh - 80px);
     align-items: flex-start;
   }
@@ -786,7 +786,7 @@ body::-webkit-scrollbar-thumb {
   .project-section,
   .resume-section,
   .contact-section {
-    padding: 3rem 0 2rem; /* Increased gap for mobile */
+    padding: 6rem 0 3rem; /* 2nd grid line alignment for mobile */
     min-height: calc(100vh - 80px);
     align-items: flex-start;
   }
