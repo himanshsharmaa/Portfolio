@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap');
 
-/* Updated: Removed all card hover effects, fixed View More scope - v2.4 */
+/* Updated: Fixed project image sizing and consistency - v2.5 */
 
 :root {
   --gray-900: #111827;
@@ -592,8 +592,11 @@ body::-webkit-scrollbar-thumb {
 
 .project-img {
   width: 100%;
+  height: 250px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
+  object-position: center;
+  border-radius: 0.75rem 0.75rem 0 0;
 }
 
 .project-card-body {
