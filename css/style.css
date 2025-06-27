@@ -15,14 +15,6 @@ html {
   scroll-padding-top: 80px; /* Account for fixed navbar */
 }
 
-body {/* Contact Section */
-.contact-section {
-  padding: 6rem 0; /* Increased gap */
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
 body {
   background-color: var(--gray-900);
   color: var(--gray-200);
@@ -266,13 +258,13 @@ body::-webkit-scrollbar-thumb {
 
 .tech-list li {
   background-color: var(--gray-800);
-  padding: 0.75rem 1.5rem; /* More padding for better touch targets */
+  padding: 0.75rem 1.5rem;
   border-radius: 9999px;
   border: 1px solid var(--border-color);
-  font-size: 0.9rem; /* Slightly larger text */
-  font-weight: 500; /* Medium weight for emphasis */
+  font-size: 0.9rem;
+  font-weight: 500;
   color: var(--gray-200);
-  transition: all 0.3s ease; /* Smooth transitions */
+  transition: all 0.3s ease;
   cursor: default;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
@@ -435,7 +427,7 @@ body::-webkit-scrollbar-thumb {
 
 .timeline-year {
   position: absolute;
-  left: -7rem; /* Adjusted for new padding */
+  left: -7rem;
   top: 0;
   width: 6rem;
   height: 6rem;
@@ -483,7 +475,7 @@ body::-webkit-scrollbar-thumb {
 
 /* Contact Section */
 .contact-section {
-  padding: 4rem 0;
+  padding: 6rem 0; /* Increased gap */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -889,5 +881,10 @@ body::-webkit-scrollbar-thumb {
     margin-top: 0.5rem;
     padding: 1rem;
     border: 1px solid var(--border-color);
+  }
+  
+  .navbar-nav {
+    flex-direction: column;
+    align-items: center;
   }
 }
