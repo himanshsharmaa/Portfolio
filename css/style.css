@@ -364,6 +364,13 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+  max-height: 300px;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.skills-grid.expanded {
+  max-height: none;
 }
 
 .skill-tag {
@@ -374,12 +381,40 @@ body::-webkit-scrollbar-thumb {
   font-size: 0.875rem;
   font-weight: 500;
   border: 1px solid var(--border-color);
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.skill-tag:hover {
-  background: linear-gradient(135deg, var(--primary-color), #9333ea);
+.view-more-container {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.view-more-btn {
+  background: transparent;
+  color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.view-more-btn:hover {
+  background-color: var(--primary-color);
   color: white;
+}
+
+.view-more-icon {
+  transition: transform 0.3s ease;
+}
+
+.view-more-btn.expanded .view-more-icon {
+  transform: rotate(180deg);
 }
 
 .achievements-list {
@@ -396,16 +431,9 @@ body::-webkit-scrollbar-thumb {
   background: rgba(17, 24, 39, 0.3);
   border-radius: 1rem;
   border: 1px solid var(--border-color);
-  transition: all 0.3s ease;
-}
-
-.achievement-item:hover {
-  background: rgba(168, 85, 247, 0.1);
-  border-color: rgba(168, 85, 247, 0.3);
 }
 
 .achievement-icon {
-  font-size: 1.5rem;
   width: 40px;
   height: 40px;
   display: flex;
@@ -414,6 +442,11 @@ body::-webkit-scrollbar-thumb {
   background: rgba(168, 85, 247, 0.1);
   border-radius: 0.5rem;
   flex-shrink: 0;
+  color: var(--primary-color);
+}
+
+.achievement-icon i {
+  font-size: 1.2rem;
 }
 
 .achievement-content h5 {
