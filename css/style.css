@@ -352,25 +352,25 @@ body::-webkit-scrollbar-thumb {
 
 /* Resume Section */
 .resume-section {
-  padding: 6rem 0;
+  padding: 4rem 0; /* Matched to hero section for uniform spacing */
 }
 
 .resume-section h3 {
     color: var(--gray-200);
-    font-size: 1.75rem; /* Increased size */
+    font-size: 2rem; /* Increased from 1.75rem */
     font-weight: 700;
-    margin-bottom: 2rem; /* Add margin to space out from timeline */
+    margin-bottom: 4rem; /* Increased from 2rem for more space */
 }
 
 .timeline-container {
   position: relative;
-  padding-left: 6rem; /* Increased space for larger circles */
+  padding-left: 7rem; /* Increased from 6rem for even more space */
 }
 
 .timeline-container::before {
   content: '';
   position: absolute;
-  left: 3rem;
+  left: 3.5rem;
   transform: translateX(-50%);
   top: 0;
   bottom: 0;
@@ -380,7 +380,7 @@ body::-webkit-scrollbar-thumb {
 
 .timeline-item {
   position: relative;
-  margin-bottom: 5rem; /* More space between items */
+  margin-bottom: 6rem; /* Increased from 5rem for more space between items */
 }
 
 .timeline-item:last-child {
@@ -389,7 +389,7 @@ body::-webkit-scrollbar-thumb {
 
 .timeline-year {
   position: absolute;
-  left: -6rem; /* Position in the expanded padding area */
+  left: -7rem; /* Adjusted for new padding */
   top: 0;
   width: 6rem;
   height: 6rem;
@@ -409,28 +409,30 @@ body::-webkit-scrollbar-thumb {
 }
 
 .timeline-content {
-  padding-left: 2rem;
-  padding-top: 1rem;
+  padding-left: 2.5rem; /* Increased from 2rem */
+  padding-top: 0.5rem; /* Reduced from 1rem for better alignment */
 }
 
 .timeline-title {
-  font-size: 1.125rem;
+  font-size: 1.25rem; /* Increased from 1.125rem */
   font-weight: 600;
   color: var(--gray-200);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.75rem; /* Increased from 0.5rem */
 }
 
 .timeline-company {
   color: var(--gray-400);
   font-weight: normal;
-  font-size: 0.9rem;
+  font-size: 1rem; /* Increased from 0.9rem */
   display: block;
+  margin-bottom: 0.5rem; /* Added margin */
 }
 
 .timeline-content p {
     color: var(--gray-400);
-    font-size: 0.9rem;
+    font-size: 1rem; /* Increased from 0.9rem */
     margin-bottom: 0;
+    line-height: 1.6; /* Added for better readability */
 }
 
 /* Contact Section */
@@ -601,30 +603,14 @@ body::-webkit-scrollbar-thumb {
   .tech-list {
     justify-content: center;
   }
-}
-
-@media (max-width: 767.98px) {
-  .hero {
-    padding: 3rem 0 2rem;
-    min-height: calc(100vh - 80px);
-  }
-
-  .hero-title {
-    font-size: 2.2rem;
-    line-height: 1.2;
-    margin-bottom: 1.5rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-    line-height: 1.6;
-    margin-bottom: 2rem;
-    max-width: 100%;
-  }
 
   .section-title {
     font-size: 1.8rem;
     line-height: 1.3;
+  }
+
+  .resume-section {
+    padding: 3rem 0 2rem; /* Match hero section responsive padding */
   }
 
   .timeline-container {
@@ -730,6 +716,10 @@ body::-webkit-scrollbar-thumb {
   .container {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .resume-section {
+    padding: 2rem 0 1.5rem; /* Match hero section responsive padding */
   }
 
   .timeline-container {
