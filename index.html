@@ -425,22 +425,40 @@
 
       <div class="col-lg-7 col-12 mt-5 mt-lg-0">
         <h2 class="mb-4 section-title">Interested to work together? Let's talk</h2>
-        <form action="#" method="post" class="contact-form">
-          <div class="row">
-            <div class="col-lg-6 col-12">
-              <input type="text" class="form-control" name="name" placeholder="Your Name">
-            </div>
-            <div class="col-lg-6 col-12">
-              <input type="email" class="form-control" name="email" placeholder="Email">
-            </div>
-            <div class="col-12">
-              <textarea name="message" rows="6" class="form-control" placeholder="Message"></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="form-control-submit-button">Send Button</button>
-            </div>
-          </div>
-        </form>
+        <form
+  action="https://formspree.io/f/xwpbardz"
+  method="POST"
+  id="contact-form"
+>
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-12">
+      <div class="form-group">
+        <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+      </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-12">
+      <div class="form-group">
+        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-group">
+        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+      </div>
+    </div>
+    <div class="col-12">
+      <div class="form-group">
+        <textarea class="form-control" rows="5" name="message" placeholder="Your Message" required></textarea>
+      </div>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn-primary">Send Message</button>
+    </div>
+  </div>
+</form>
+<div id="form-success" style="display:none;color:#10b981;margin-top:1rem;">
+  Thank you! Your message has been sent.
+</div>
       </div>
     </div>
   </div>
@@ -451,7 +469,7 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6 col-md-7 col-12">
-        <p class="copyright-text mb-0">Designed & Built by <a href="https://github.com/himanshsharmaa">Himansh Sharma</a></p>
+        <p class="copyright-text mb-0">Designed & Built by <a href="https://www.linkedin.com/in/himanshsharmaa">Himansh Sharma</a></p>
       </div>
       <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center justify-content-md-end">
         <div class="footer-social-links">
@@ -490,6 +508,15 @@
           viewMoreText.textContent = 'View Less';
         }
       }
+
+      // Show success message after redirect (optional, if using AJAX)
+      $('#contact-form').on('submit', function(e) {
+          // ...validation as above...
+          if (isValid) {
+              // Optionally use AJAX to submit and show message without page reload
+              // Otherwise, Formspree will show its own thank you page
+          }
+      });
     </script>
 
   </body>

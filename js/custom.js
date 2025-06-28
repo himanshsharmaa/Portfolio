@@ -172,3 +172,23 @@ style.textContent = `
     }
 `;
 document.head.appendChild(style);
+
+// Formspree integration
+$('#contact-form').on('submit', function(e) {
+    // Optional: client-side validation
+    let isValid = true;
+    $(this).find('input[required], textarea[required]').each(function() {
+        if ($(this).val().trim() === '') {
+            isValid = false;
+            $(this).addClass('error');
+        } else {
+            $(this).removeClass('error');
+        }
+    });
+    if (!isValid) {
+        alert('Please fill in all required fields.');
+        e.preventDefault();
+        return false;
+    }
+    // Let the form submit to Formspree
+});
