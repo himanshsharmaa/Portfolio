@@ -1213,8 +1213,10 @@ body::-webkit-scrollbar-thumb {
 
 .footer {
   background: transparent;
-  padding: 2rem 0 1.5rem 0;
+  padding: 1.5rem 0 1.2rem 0;
   width: 100%;
+  position: relative;
+  bottom: 0;
 }
 
 .footer .container {
@@ -1227,6 +1229,8 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
 }
 
 .footer .copyright-text {
@@ -1234,6 +1238,7 @@ body::-webkit-scrollbar-thumb {
   font-size: 1rem;
   margin: 0;
   text-align: left;
+  padding-left: 1.5rem;
 }
 
 .footer .copyright-text a {
@@ -1252,6 +1257,7 @@ body::-webkit-scrollbar-thumb {
   gap: 1.5rem;
   align-items: center;
   justify-content: flex-end;
+  padding-right: 1.5rem;
 }
 
 .footer-social-links a {
@@ -1264,4 +1270,18 @@ body::-webkit-scrollbar-thumb {
 
 .footer-social-links a:hover {
   color: var(--primary-color);
+}
+
+/* Responsive: stack on mobile */
+@media (max-width: 768px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .footer .copyright-text,
+  .footer-social-links {
+    padding: 0;
+    justify-content: center;
+  }
 }
