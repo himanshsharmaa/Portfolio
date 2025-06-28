@@ -749,7 +749,6 @@ body::-webkit-scrollbar-thumb {
   box-shadow: none;
   position: relative;
   overflow: visible;
-  transition: none;
 }
 
 .contact-form::before {
@@ -758,29 +757,26 @@ body::-webkit-scrollbar-thumb {
 
 .form-group {
   margin-bottom: 1rem;
-  position: relative;
 }
 
 .form-control {
   background: var(--gray-900);
   border: 1px solid var(--gray-700);
   border-radius: 0.5rem;
-  color: var(--gray-200);
+  color: #fff;
   padding: 0.75rem 1rem;
   font-size: 1rem;
   transition: border-color 0.2s;
   width: 100%;
-  position: relative;
   box-shadow: none;
 }
 
 .form-control:focus {
   background: var(--gray-900);
   border-color: var(--primary-color);
-  color: var(--gray-200);
+  color: #fff;
   box-shadow: none;
   outline: none;
-  transform: none;
 }
 
 .form-control::placeholder {
@@ -807,8 +803,6 @@ body::-webkit-scrollbar-thumb {
 .contact-section button[type="submit"].btn-primary:hover {
   background: #9333ea;
   color: #fff;
-  box-shadow: none;
-  transform: none;
 }
 
 .contact-info-box {
@@ -824,16 +818,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact-info-box h3 {
-  color: var(--gray-200);
+  color: #fff;
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
 }
 
 .contact-info-box p {
-  color: var(--gray-400);
+  color: #fff;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+}
+
+.contact-info-box b,
+.contact-info-box strong {
+  color: #fff;
+  font-weight: 600;
 }
 
 .contact-info-box a {
@@ -845,12 +845,6 @@ body::-webkit-scrollbar-thumb {
 
 .contact-info-box a:hover {
   color: var(--primary-color);
-}
-
-.contact-info-box b,
-.contact-info-box strong {
-  color: var(--gray-200);
-  font-weight: 600;
 }
 
 /* Footer */
