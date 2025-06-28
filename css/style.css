@@ -225,7 +225,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .about-hero-card {
-  background: linear-gradient(135deg, rgba(168, 85, 247, 0.1), rgba(147, 51, 234, 0.05));
+  background: linear-gradient(180deg, rgba(168, 85, 247, 0.1), rgba(147, 51, 234, 0.05));
   backdrop-filter: blur(20px);
   border: 1px solid var(--border-color);
   border-radius: 2rem;
