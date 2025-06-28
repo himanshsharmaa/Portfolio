@@ -814,6 +814,90 @@ body::-webkit-scrollbar-thumb {
   margin-top: 1.5rem;
 }
 
+/* Contact Form Themed Styles */
+.contact-section form {
+  background: rgba(31, 41, 55, 0.4);
+  backdrop-filter: blur(20px);
+  border: 1px solid var(--border-color);
+  border-radius: 2rem;
+  padding: 2.5rem 2rem 2rem 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 10px 40px rgba(168, 85, 247, 0.08);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.contact-section form::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-color), #9333ea, #7c3aed);
+  border-radius: 2rem 2rem 0 0;
+}
+
+.contact-section .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.contact-section .form-control {
+  background: rgba(31, 41, 55, 0.6);
+  border: 2px solid var(--border-color);
+  border-radius: 1rem;
+  color: var(--gray-200);
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+
+.contact-section .form-control:focus {
+  background: rgba(31, 41, 55, 0.8);
+  border-color: var(--primary-color);
+  color: var(--gray-200);
+  box-shadow: 0 0 0 0.2rem rgba(168, 85, 247, 0.25);
+  outline: none;
+}
+
+.contact-section .form-control::placeholder {
+  color: var(--gray-400);
+  opacity: 1;
+}
+
+.contact-section button[type="submit"].btn-primary {
+  background: linear-gradient(135deg, var(--primary-color), #9333ea);
+  color: white;
+  padding: 0.8rem 2.2rem;
+  border-radius: 2rem;
+  font-weight: 600;
+  border: none;
+  box-shadow: 0 8px 24px rgba(168, 85, 247, 0.15);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-section button[type="submit"].btn-primary:hover {
+  background: linear-gradient(135deg, #9333ea, var(--primary-color));
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 16px 40px rgba(168, 85, 247, 0.25);
+}
+
+#form-success {
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid #10b981;
+  border-radius: 1rem;
+  color: #10b981;
+  padding: 1rem 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  box-shadow: 0 4px 24px rgba(16,185,129,0.08);
+}
+
 /* Footer */
 .footer {
   padding: 2rem 0;
