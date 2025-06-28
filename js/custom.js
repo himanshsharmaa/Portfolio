@@ -32,28 +32,6 @@
         $('.navbar-toggler').removeClass('active');
     });
 
-    // Form submission
-    $('form').submit(function(e) {
-        e.preventDefault();
-        
-        let isValid = true;
-        $(this).find('input[required], textarea[required]').each(function() {
-            if ($(this).val().trim() === '') {
-                isValid = false;
-                $(this).addClass('error');
-            } else {
-                $(this).removeClass('error');
-            }
-        });
-        
-        if (isValid) {
-            alert('Thank you for your message! I\'ll get back to you soon.');
-            this.reset();
-        } else {
-            alert('Please fill in all required fields.');
-        }
-    });
-
     // Add animation classes when elements come into view
     function animateOnScroll() {
         $('.hero-title, .hero-subtitle, .social-links').each(function() {
@@ -173,11 +151,19 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 
-// Formspree integration
-$('#contact-form').on('submit', function(e) {
-    // Optional: client-side validation
+// Form submission with Formspree
+$('#contact-form').submit(function(e) {
+    e.preventDefault();
+    
+    const form = this;
+    const formData = new FormData(form);
+    const submitBtn = $(form).find('button[type="submit"]');
+    const btnText = submitBtn.find('.btn-text');
+    const btnLoading = submitBtn.find('.btn-loading');
+    
+    // Validation
     let isValid = true;
-    $(this).find('input[required], textarea[required]').each(function() {
+    $(form).find('input[required], textarea[required]').each(function() {
         if ($(this).val().trim() === '') {
             isValid = false;
             $(this).addClass('error');
@@ -185,10 +171,69 @@ $('#contact-form').on('submit', function(e) {
             $(this).removeClass('error');
         }
     });
+    
     if (!isValid) {
-        alert('Please fill in all required fields.');
-        e.preventDefault();
-        return false;
+        showNotification('Please fill in all required fields.', 'error');
+        return;
     }
-    // Let the form submit to Formspree
+    
+    // Show loading state
+    submitBtn.prop('disabled', true);
+    btnText.hide();
+    btnLoading.show();
+    
+    // Submit to Formspree
+    fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => {
+        if (response.ok) {
+            showNotification('Thank you! Your message has been sent successfully.', 'success');
+            form.reset();
+        } else {
+            throw new Error('Network response was not ok');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
+    })
+    .finally(() => {
+        // Reset button state
+        submitBtn.prop('disabled', false);
+        btnText.show();
+        btnLoading.hide();
+    });
 });
+
+// Notification system
+function showNotification(message, type = 'info') {
+    // Remove existing notifications
+    $('.notification').remove();
+    
+    const notification = $(`
+        <div class="notification notification-${type}">
+            <div class="notification-content">
+                <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle'}"></i>
+                <span>${message}</span>
+                <button class="notification-close">&times;</button>
+            </div>
+        </div>
+    `);
+    
+    $('body').append(notification);
+    
+    // Auto remove after 5 seconds
+    setTimeout(() => {
+        notification.fadeOut(() => notification.remove());
+    }, 5000);
+    
+    // Manual close
+    notification.find('.notification-close').click(() => {
+        notification.fadeOut(() => notification.remove());
+    });
+}
