@@ -741,10 +741,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact-form {
-  background: var(--gray-800);
-  border: 1px solid var(--border-color);
-  border-radius: 1rem;
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
   margin-bottom: 2rem;
   box-shadow: none;
   position: relative;
@@ -766,16 +766,15 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   padding: 0.75rem 1rem;
   font-size: 1rem;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, color 0.2s;
   width: 100%;
   box-shadow: none;
 }
 
 .form-control:focus {
-  background: var(--gray-900);
   border-color: var(--primary-color);
-  color: #fff;
-  box-shadow: none;
+  color: var(--primary-color);
+  background: var(--gray-900);
   outline: none;
 }
 
@@ -784,6 +783,7 @@ body::-webkit-scrollbar-thumb {
   opacity: 1;
 }
 
+/* Button styling: white text, purple hover */
 .contact-section button[type="submit"].btn-primary {
   background: var(--primary-color);
   color: #fff;
@@ -792,7 +792,7 @@ body::-webkit-scrollbar-thumb {
   font-weight: 600;
   border: none;
   box-shadow: none;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.2s;
   margin-top: 0.5rem;
   font-size: 1rem;
   display: inline-flex;
@@ -801,20 +801,20 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact-section button[type="submit"].btn-primary:hover {
-  background: #9333ea;
-  color: #fff;
+  background: #fff;
+  color: var(--primary-color);
 }
 
 .contact-info-box {
-  background: var(--gray-800);
-  border: 1px solid var(--border-color);
+  padding: 1.5rem 1.25rem 1.25rem 1.25rem;
   border-radius: 0.75rem;
-  padding: 2rem 2rem 1.5rem 2rem;
-  margin-top: 2rem;
-  box-shadow: none;
+  margin-top: 1.5rem;
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
+  background: var(--gray-800);
+  border: 1px solid var(--border-color);
+  box-shadow: none;
 }
 
 .contact-info-box h3 {
@@ -828,12 +828,6 @@ body::-webkit-scrollbar-thumb {
   color: #fff;
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
-}
-
-.contact-info-box b,
-.contact-info-box strong {
-  color: #fff;
-  font-weight: 600;
 }
 
 .contact-info-box a {
