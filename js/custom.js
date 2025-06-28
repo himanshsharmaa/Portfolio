@@ -237,3 +237,12 @@ function showNotification(message, type = 'info') {
         notification.fadeOut(() => notification.remove());
     });
 }
+
+$(function() {
+  $('.tab-btn').click(function() {
+    $('.tab-btn').removeClass('active');
+    $(this).addClass('active');
+    $('.resume-tab-content').hide();
+    $('#' + $(this).data('tab')).show();
+  });
+});
