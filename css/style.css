@@ -699,15 +699,18 @@ body::-webkit-scrollbar-thumb {
 
 .timeline-item {
   display: flex;
-  align-items: flex-start; /* or center for perfect vertical alignment */
+  align-items: flex-start;
   margin-bottom: 2.5rem;
+  position: relative;
+  padding-left: 10rem; /* More space for year and dot */
 }
 
 .timeline-item::before {
   content: '';
   position: absolute;
-  left: -2.15rem;
-  top: 0.7rem;
+  left: 8.8rem; /* Just after the year, adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
   width: 1.1rem;
   height: 1.1rem;
   background: var(--primary-color);
@@ -719,21 +722,19 @@ body::-webkit-scrollbar-thumb {
 
 .timeline-year {
   position: absolute;
-  left: -6.5rem;
-  top: 0;
+  left: 0.2rem; /* Very close to the line */
+  top: 50%;
+  transform: translateY(-50%);
   color: var(--primary-color);
   font-weight: 700;
-  font-size: 1.1rem;
-  min-width: 5rem;
+  font-size: 1.2rem;
+  min-width: 90px;   /* Enough for duration */
   text-align: right;
   z-index: 3;
   background: transparent;
-  min-width: 110px;         /* Adjust width as needed */
-  margin-right: 1.5rem;
-  margin-top: 0.2rem;
-  letter-spacing: 0.5px;
-  display: flex;
-  align-items: center;
+  margin-right: 0.5rem;
+  line-height: 1.1;
+  pointer-events: none;
 }
 
 .timeline-content {
@@ -748,6 +749,11 @@ body::-webkit-scrollbar-thumb {
   transition: background 0.3s;
 }
 
+/* Timeline description color like project-description */
+.timeline-content p {
+  color: var(--gray-400);
+}
+
 /* Responsive improvements */
 @media (max-width: 991px) {
   .timeline-container {
@@ -755,17 +761,46 @@ body::-webkit-scrollbar-thumb {
     padding-left: 1rem;
     border-left: 3px solid var(--primary-color);
   }
+  .timeline-item {
+    padding-left: 3.2rem; /* Enough for year and dot */
+    margin-bottom: 2.5rem;
+    position: relative;
+  }
   .timeline-year {
-    position: static;
-    display: block;
-    margin-bottom: 0.5rem;
-    text-align: left;
-    left: 0;
+    position: absolute;
+    left: 0.1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    height: auto;
+    font-size: 0.95rem;
     background: transparent;
+    border: none;
+    color: var(--primary-color);
+    font-weight: 700;
+    display: block;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 0;
+    z-index: 2;
+    line-height: 1.1;
+    text-align: right;
+    padding: 0;
   }
   .timeline-item::before {
-    left: -2.1rem;
-    top: 1.1rem;
+    left: 2.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .timeline-content {
+    margin-left: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border-left: none;
+    background: rgba(31, 41, 55, 0.5);
+    border-radius: 8px;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 }
 
@@ -1109,6 +1144,32 @@ body::-webkit-scrollbar-thumb {
   .achievement-content p {
     font-size: 0.8rem;
   }
+
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  .footer .copyright-text {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+section,
+.contact-section,
+.resume-section,
+.project-section,
+.about-section,
+.hero {
+  width: 100%;
+  box-sizing: border-box;
+  overflow: visible;
+  position: relative;
+  z-index: 1;
 }
 
 .contact-info-box {
@@ -1143,7 +1204,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact-info-box a {
-  color: #38bdf8;
+  color: #c084fc; /* light purple */
+  font-weight: 400; /* not bold */
   text-decoration: none;
   transition: color 0.2s;
   word-break: break-all;
@@ -1296,7 +1358,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .contact-section {
-  padding-bottom: 5rem; /* Add more space below contact section */
+  padding-bottom: 10rem; /* Increased space below */
 }
 
 /* Glassmorphism effect for cards */
@@ -1324,7 +1386,8 @@ body::-webkit-scrollbar-thumb {
 /* Email and phone color/hover */
 .contact-info-box a[href^="mailto:"],
 .contact-info-box a[href^="tel:"] {
-  color: #fff;
+  color: #c084fc; /* light purple */
+  font-weight: 400; /* not bold */
   text-decoration: none;
   transition: color 0.2s;
   word-break: break-all;
