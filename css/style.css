@@ -218,7 +218,7 @@ body::-webkit-scrollbar-thumb {
 /* General Section Styling */
 .section-title {
   text-align: center;
-  color: var(--gray-200);
+  color: #fff;
   margin-top: 0;
   margin-bottom: 3rem;
   font-size: 2.25rem;
@@ -1158,10 +1158,11 @@ body::-webkit-scrollbar-thumb {
   border: 1px solid var(--border-color);
   border-radius: 1rem;
   padding: 2rem 1.5rem 1.5rem 1.5rem;
-  margin-bottom: 2rem;
-  box-shadow: none;
-  position: relative;
-  overflow: visible;
+  margin-bottom: 0;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+  border-radius: 1rem;
+  border: 1px solid var(--border-color);
+  background: var(--gray-800);
 }
 
 .form-group {
@@ -1216,14 +1217,15 @@ body::-webkit-scrollbar-thumb {
 
 .footer {
   background: transparent;
-  padding: 1.5rem 0 1.2rem 0;
+  border-top: 1px solid var(--border-color);
+  padding: 2rem 0 1.5rem 0;
   width: 100%;
   position: relative;
   bottom: 0;
 }
 
 .footer .container {
-  max-width: 1140px; /* Match navbar/container width */
+  max-width: 1140px;
   margin: 0 auto;
   width: 100%;
   padding-left: 1rem;
@@ -1240,21 +1242,21 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer .copyright-text {
-  color: #fff;
+  color: var(--gray-400);
   font-size: 1rem;
   margin: 0;
   text-align: left;
   padding-left: 0;
+  font-weight: 400;
 }
 
 .footer .copyright-text a {
-  color: #fff;
+  color: var(--primary-color);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s;
 }
 
-.footer .copyright-text:hover,
 .footer .copyright-text a:hover {
   color: #9333ea;
 }
@@ -1268,7 +1270,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer-social-links a {
-  color: #fff;
+  color: var(--gray-400);
   font-size: 1.5rem;
   transition: color 0.2s;
   display: inline-flex;
@@ -1276,7 +1278,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .footer-social-links a:hover {
-  color: #9333ea;
+  color: var(--primary-color);
 }
 
 /* Responsive: stack on mobile */
