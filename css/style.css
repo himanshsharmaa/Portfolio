@@ -210,10 +210,15 @@ body::-webkit-scrollbar-thumb {
 
 /* General Section Styling */
 .section-title {
+  text-align: center;
+  color: var(--gray-200);
+  margin-top: 0;
+  margin-bottom: 3rem;
   font-size: 2.25rem;
   font-weight: 700;
-  margin-bottom: 3rem;
-  color: var(--gray-200);
+  width: 100%;
+  /* Optional: add a little extra space above for clarity */
+  padding-top: 0.5rem;
 }
 
 /* About Section */
