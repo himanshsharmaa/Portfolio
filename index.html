@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- MAIN STYLE -->
-    <link rel="stylesheet" href="css/style.css?v=2.7">
+    <link rel="stylesheet" href="css/style.css?v=2.8">
   </head>
   <body class="dark-mode">
   <div class="background-grid"></div>
@@ -72,21 +72,30 @@
         </div>
       </section>
 
-
     <!-- ABOUT -->
     <section class="about-section" id="about">
       <div class="container">
         <h2 class="section-title text-center">About Me</h2>
         
-        <!-- Hero Card -->
+        <!-- About Hero Card -->
         <div class="about-hero-card">
           <div class="about-hero-content">
             <div class="about-intro">
-              <h3 class="about-subtitle">Full-Stack Developer & AI Enthusiast</h3>
+              <h3 class="about-subtitle">AI and ML enthusiast</h3>
               <p class="about-description">
-                Passionate developer with 2 years of experience crafting innovative software solutions. 
-                I specialize in building scalable web applications and exploring the frontiers of AI/ML technology.
+                with 2 years of experience in innovative software development and web development, 
+                expert in Python programming and full-stack application building.
               </p>
+              <p class="about-description">
+                Key achievements include founding 'Keplor', and developing 'Examify', an online examination portal, utilizing 
+                a modern tech stack for improved educational management.
+              </p>
+              <div class="cta-container">
+                <a href="#" class="btn-primary">
+                  <i class="fas fa-download"></i>
+                  Download Resume
+                </a>
+              </div>
             </div>
             <div class="about-stats">
               <div class="stat-item">
@@ -152,7 +161,7 @@
                 </div>
               </div>
 
-              <!-- AI/ML Technologies -->
+              <!-- AI/ML & Data Science -->
               <div class="skill-category">
                 <h5 class="category-title">AI/ML & Data Science</h5>
                 <div class="category-skills">
@@ -169,7 +178,7 @@
                 </div>
               </div>
 
-              <!-- Tools & Technologies -->
+              <!-- Tools & Others -->
               <div class="skill-category">
                 <h5 class="category-title">Tools & Others</h5>
                 <div class="category-skills">
@@ -183,8 +192,10 @@
                 </div>
               </div>
             </div>
+            
+            <!-- View More Button for Skills -->
             <div class="view-more-container">
-              <button class="view-more-btn" onclick="toggleSkills()">
+              <button class="view-more-btn skills-view-more" onclick="toggleSkills()">
                 <span class="view-more-text">View More</span>
                 <i class="fas fa-chevron-down view-more-icon"></i>
               </button>
@@ -270,17 +281,104 @@
               </button>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <!-- CTA Card -->
-          <div class="about-card cta-card">
-            <div class="cta-content">
-              <h4>Let's Work Together</h4>
-              <p>Ready to bring your ideas to life with cutting-edge technology</p>
-              <div class="cta-buttons">
-                <a href="Resume-1.pdf" class="btn-primary-custom" target="_blank">
-                  <i class="fas fa-download"></i>
-                  Download Resume
-                </a>
+    <!-- PROJECTS -->
+    <section class="projects-section" id="project">
+      <div class="container">
+        <h2 class="section-title text-center">Things I've Built</h2>
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="project-item">
+              <div class="project-image">
+                <img src="images/project/examify.png" class="img-fluid" alt="Examify">
+              </div>
+              <div class="project-info">
+                <h3>Examify - Online Examination Portal</h3>
+                <p>Examify is an online examination and classroom management system designed for educational institutions. Built to emulate key features of Google Classroom, it offers seamless login, class joining via code, exam management, result processing, and user roles for students, teachers, and administrators. The project is crafted with a modern tech stack, featuring PHP, MySQL, JavaScript, and Tailwind CSS, ensuring a polished and interactive UI.</p>
+                <div class="project-tech">
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                  <span>JavaScript</span>
+                  <span>Tailwind CSS</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/himanshsharmaa" title="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="project-item">
+              <div class="project-image">
+                <img src="images/project/aura.png" class="img-fluid" alt="Aura">
+              </div>
+              <div class="project-info">
+                <h3>Aura - Desktop Companion AI</h3>
+                <p>Aura is a human-like AI companion that interacts naturally through voice, adapts to your emotions, and evolves with you. Powered by advanced AI (Whisper, Llama 2, Edge-TTS, DeepFace, and more), Aura offers real-time speech recognition, expressive responses, memory, and context awareness.</p>
+                <div class="project-tech">
+                  <span>Python</span>
+                  <span>Whisper</span>
+                  <span>Llama 2</span>
+                  <span>Edge-TTS</span>
+                  <span>DeepFace</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/himanshsharmaa" title="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="project-item">
+              <div class="project-image">
+                <img src="images/project/portfolio.png" class="img-fluid" alt="Portfolio">
+              </div>
+              <div class="project-info">
+                <h3>Personal Portfolio Website</h3>
+                <p>A modern, responsive portfolio website showcasing my projects, skills, and experience. Built with a focus on clean design, smooth animations, and optimal user experience across all devices.</p>
+                <div class="project-tech">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                  <span>Bootstrap</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/himanshsharmaa" title="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="project-item">
+              <div class="project-image">
+                <img src="images/project/optis.png" class="img-fluid" alt="Optis">
+              </div>
+              <div class="project-info">
+                <h3>Optis - Coworking Space Platform</h3>
+                <p>A comprehensive platform for managing coworking spaces and flexible offices. Features include space booking, membership management, and community building tools for modern workspace solutions.</p>
+                <div class="project-tech">
+                  <span>React</span>
+                  <span>Node.js</span>
+                  <span>MongoDB</span>
+                  <span>Express.js</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/himanshsharmaa" title="GitHub"><i class="fab fa-github"></i></a>
+                  <a href="#" title="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+                </div>
               </div>
             </div>
           </div>
@@ -288,268 +386,138 @@
       </div>
     </section>
 
-<!-- PROJECTS -->
-<section class="project-section" id="project">
-  <div class="container">
-    <h2 class="section-title text-center">Things I’ve Built</h2>
-    <div class="row">
-      <!-- Project 1 -->
-      <div class="col-lg-6 col-md-6 mb-4">
-        <div class="project-card">
-          <img src="images/project/Examify.png" class="project-img" alt="Examify">
-          <div class="project-card-body">
-            <h3 class="project-title">Examify - Online Examination Portal</h3>
-            <p class="project-description">Examify is an online examination and classroom management system designed for educational institutions. Built to emulate key features of Google Classroom, it offers seamless login, class joining via code, exam management, result processing, and user roles for students, teachers, and administrators. The project is crafted with a modern tech stack, featuring PHP, MySQL, JavaScript, and Tailwind CSS, ensuring a polished and interactive UI.</p>
-            <p class="project-tech">PHP, MySQL, JavaScript, Tailwind CSS</p>
-            <div class="project-links">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Project 2 -->
-      <div class="col-lg-6 col-md-6 mb-4">
-        <div class="project-card">
-          <img src="images/project/project-image.png" class="project-img" alt="Aura - Desktop Companion AI">
-          <div class="project-card-body">
-            <h3 class="project-title">Aura - Desktop Companion AI</h3>
-            <p class="project-description">Aura is a human-like AI companion that interacts naturally through voice, adapts to your emotions, and evolves with you. Powered by advanced AI (Whisper, Llama 2, Edge-TTS, DeepFace, and more), Aura offers real-time speech recognition, expressive responses, memory, and context awareness.</p>
-            <p class="project-tech">Python, Whisper, Llama 2, Edge-TTS, DeepFace</p>
-            <div class="project-links">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Project 3 -->
-      <div class="col-lg-6 col-md-6 mb-4">
-        <div class="project-card">
-          <img src="images/project/project-image.png" class="project-img" alt="Portfolio Website">
-          <div class="project-card-body">
-            <h3 class="project-title">Portfolio Website</h3>
-            <p class="project-description">A personal portfolio website built to showcase my skills and projects. Designed with a modern aesthetic, it features a clean layout, smooth animations, and a responsive design that looks great on all devices.</p>
-            <p class="project-tech">HTML, CSS, JavaScript, Bootstrap</p>
-            <div class="project-links">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Project 4 -->
-      <div class="col-lg-6 col-md-6 mb-4">
-        <div class="project-card">
-          <img src="images/project/project-image.png" class="project-img" alt="E-commerce Dashboard">
-          <div class="project-card-body">
-            <h3 class="project-title">E-commerce Dashboard</h3>
-            <p class="project-description">A comprehensive dashboard for an e-commerce platform, providing analytics on sales, user engagement, and inventory. It features interactive charts and data visualizations to help businesses make informed decisions.</p>
-            <p class="project-tech">React, Chart.js, Node.js, Express</p>
-            <div class="project-links">
-              <a href="#"><i class="fab fa-github"></i></a>
-              <a href="#"><i class="fas fa-external-link-alt"></i></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- RESUME -->
-<section class="resume-section" id="resume">
-    <div class="container">
-        <h2 class="section-title text-center mb-5">My Journey</h2>
+    <!-- RESUME -->
+    <section class="resume-section" id="resume">
+      <div class="container">
+        <h2 class="section-title text-center">Resume</h2>
         <div class="row">
-            <!-- Experiences -->
-            <div class="col-lg-4 col-12">
-                <h3 class="mb-5">Experiences</h3>
-                <div class="timeline-container">
-                    <div class="timeline-item">
-                        <div class="timeline-year">2025-Present</div>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">Core Team Member <span class="timeline-company">GeeksforGeeks IKGPTU</span></h4>
-                            <p>Contributed to community events, workshops, and projects, fostering a culture of learning and growth among students.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2024-Present</div>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">Founder <span class="timeline-company">Keplor</span></h4>
-                            <p>Led the development of innovative software solutions, from concept to deployment, focusing on user-centric design and functionality.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2023</div>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">Freelance Dev <span class="timeline-company">Self-Employed</span></h4>
-                            <p>Built and deployed apps including billing software in Python (Tkinter), and a student management system using HTML, CSS, JS, PHP, SQL.</p>
-                        </div>
-                    </div>
+          <div class="col-lg-6 col-md-12 col-12">
+            <h3 class="resume-heading">Education</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Bachelor of Computer Science</h4>
+                  <span class="timeline-date">2022 - 2026</span>
+                  <p>Currently pursuing B.Tech in Computer Science with specialization in AI/ML</p>
                 </div>
+              </div>
             </div>
-
-            <!-- Education -->
-            <div class="col-lg-4 col-12">
-                <h3 class="mb-5">Education</h3>
-                <div class="timeline-container">
-                    <div class="timeline-item">
-                        <div class="timeline-year">2024-27</div>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">B.Tech in CSE <span class="timeline-company">Punjab Technical University</span></h4>
-                            <p>Currently pursuing B.Tech in Computer Science after completing diploma: focus on DEV, DSA, and AI/ML.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2021-24</div>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">Diploma in CSE <span class="timeline-company">Govt. Polytechnic, Nilokheri</span></h4>
-                            <p>Completed diploma with core knowledge in Programming, Operating Systems, and Network Fundamentals.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2021</div>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">10th Grade (CBSE) <span class="timeline-company">St. Anthony's Secondary School</span></h4>
-                            <p>Completed with 81% in core subjects including science, maths, and computer applications.</p>
-                        </div>
-                    </div>
+          </div>
+          
+          <div class="col-lg-6 col-md-12 col-12">
+            <h3 class="resume-heading">Experience</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>Full Stack Developer</h4>
+                  <span class="timeline-date">2023 - Present</span>
+                  <p>Developing web applications using modern technologies and frameworks</p>
                 </div>
-            </div>
-
-            <!-- Certifications -->
-            <div class="col-lg-4 col-12">
-                <h3 class="mb-5">Certifications</h3>
-                <div class="timeline-container">
-                    <div class="timeline-item">
-                        <div class="timeline-year">2025</div>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">Solutions Architecture Job Simulation <span class="timeline-company">Amazon Web Services (AWS)</span></h4>
-                            <p>Built accessible web pages using HTML5, CSS3, Flexbox, and Grid layout principles.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2025</div>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">Machine Learning Foundations <span class="timeline-company">Amazon Web Services (AWS)</span></h4>
-                            <p>Learned Python syntax, control structures, OOPs, and basic problem-solving using Python.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-year">2023</div>
-                        <div class="timeline-content">
-                            <h4 class="timeline-title">Programming in C and Python <span class="timeline-company">Delhi Institute of Computer Sciences - DICS</span></h4>
-                            <p>Learned Python syntax, control structures, OOPs, and basic problem-solving using Python.</p>
-                        </div>
-                    </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4>AI/ML Engineer</h4>
+                  <span class="timeline-date">2024 - Present</span>
+                  <p>Working on machine learning projects and AI-powered applications</p>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
     <!-- CONTACT -->
-<section class="contact-section" id="contact">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-5 col-12">
-        <div class="map-wrap">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22435.919908876154!2d77.06592389913733!3d28.5585390366423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d1bdfc384b03d%3A0x685333536e34b7e0!2sDwarka%2C%20New%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1678886356572!5m2!1sen!2sin" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="contact-info-box">
-          <h3 class="mb-3">Say hello</h3>
-          <p>E-Mail: <a href="mailto:himanshsharma046@gmail.com">himanshsharma046@gmail.com</a></p>
-          <p>Phone: <a href="tel:+917678609018">+91 76786 09018</a></p>
-        </div>
-      </div>
-
-      <div class="col-lg-7 col-12 mt-5 mt-lg-0">
-        <h2 class="mb-4 section-title">Interested to work together? Let's talk</h2>
-        <form action="#" method="post" class="contact-form">
-          <div class="row">
-            <div class="col-lg-6 col-12">
-              <input type="text" class="form-control" name="name" placeholder="Your Name">
-            </div>
-            <div class="col-lg-6 col-12">
-              <input type="email" class="form-control" name="email" placeholder="Email">
-            </div>
-            <div class="col-12">
-              <textarea name="message" rows="6" class="form-control" placeholder="Message"></textarea>
-            </div>
-            <div class="col-12">
-              <button type="submit" class="form-control-submit-button">Send Button</button>
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title text-center">Get In Touch</h2>
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="contact-form">
+              <form>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Your Name" required>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Your Email" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Subject" required>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn-primary">Send Message</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 col-md-7 col-12">
-        <p class="copyright-text mb-0">Designed & Built by <a href="https://github.com/himanshsharmaa">Himansh Sharma</a></p>
-      </div>
-      <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center justify-content-md-end">
-        <div class="footer-social-links">
-          <a href="https://www.linkedin.com/in/himanshsharmaa" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-          <a href="https://github.com/himanshsharmaa" title="GitHub"><i class="fab fa-github"></i></a>
-          <a href="https://www.instagram.com/himanshsharmaa" title="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="https://x.com/himanshsharmaa_" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+        
+        <div class="contact-info">
+          <div class="row">
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <h4>Email</h4>
+                <p>himanshsharmaa@example.com</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <h4>Phone</h4>
+                <p>+91 123 456 7890</p>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-12">
+              <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <h4>Location</h4>
+                <p>India</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </section>
 
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-7 col-12">
+            <p class="copyright-text mb-0">Designed & Built by <a href="https://github.com/himanshsharmaa">Himansh Sharma</a></p>
+          </div>
+          <div class="col-lg-6 col-md-5 col-12 d-flex justify-content-center justify-content-md-end">
+            <div class="footer-social-links">
+              <a href="https://www.linkedin.com/in/himanshsharmaa" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/himanshsharmaa" title="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
+    <!-- SCRIPTS -->
+    <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/smoothscroll.js"></script>
     <script src="js/custom.js"></script>
 
-    <script>
-      // Skills Toggle Function - Only affects Skills Card
-      function toggleSkills() {
-        const skillsGrid = document.querySelector('.skills-card .skills-grid');
-        const viewMoreBtn = document.querySelector('.skills-card .view-more-btn');
-        const viewMoreText = document.querySelector('.skills-card .view-more-text');
-        
-        if (skillsGrid.classList.contains('expanded')) {
-          skillsGrid.classList.remove('expanded');
-          viewMoreBtn.classList.remove('expanded');
-          viewMoreText.textContent = 'View More';
-        } else {
-          skillsGrid.classList.add('expanded');
-          viewMoreBtn.classList.add('expanded');
-          viewMoreText.textContent = 'View Less';
-        }
-      }
-      
-      // Achievements Toggle Function - Only affects Achievements Card
-      function toggleAchievements() {
-        const achievementsList = document.querySelector('.achievements-card .achievements-list');
-        const viewMoreBtn = document.querySelector('.achievements-card .view-more-btn');
-        const viewMoreText = document.querySelector('.achievements-card .view-more-text');
-        
-        if (achievementsList.classList.contains('expanded')) {
-          achievementsList.classList.remove('expanded');
-          viewMoreBtn.classList.remove('expanded');
-          viewMoreText.textContent = 'View More';
-        } else {
-          achievementsList.classList.add('expanded');
-          viewMoreBtn.classList.add('expanded');
-          viewMoreText.textContent = 'View Less';
-        }
-      }
-    </script>
-
+  </div>
   </body>
 </html>
