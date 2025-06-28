@@ -1294,3 +1294,52 @@ body::-webkit-scrollbar-thumb {
     justify-content: center;
   }
 }
+
+.contact-section {
+  padding-bottom: 5rem; /* Add more space below contact section */
+}
+
+/* Glassmorphism effect for cards */
+.contact-info-box,
+.contact-form {
+  background: rgba(24, 28, 39, 0.6); /* transparent dark */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 1rem;
+  border: 1px solid rgba(168,85,247,0.12);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+}
+
+/* Match info card width to map */
+.contact-info-box {
+  max-width: 480px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 2rem 2rem 1.5rem 2rem;
+}
+
+/* Email and phone color/hover */
+.contact-info-box a[href^="mailto:"],
+.contact-info-box a[href^="tel:"] {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s;
+  word-break: break-all;
+}
+
+.contact-info-box a[href^="mailto:"]:hover,
+.contact-info-box a[href^="tel:"]:hover {
+  color: var(--primary-color);
+}
+
+/* Footer social icon smaller */
+.footer-social-links a {
+  font-size: 1.2rem;
+  margin-right: 1.2rem;
+}
+.footer-social-links a:last-child {
+  margin-right: 0;
+}
