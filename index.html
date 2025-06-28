@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- MAIN STYLE -->
-    <link rel="stylesheet" href="css/style.css?v=2.5">
+    <link rel="stylesheet" href="css/style.css?v=2.7">
   </head>
   <body class="dark-mode">
   <div class="background-grid"></div>
@@ -209,6 +209,7 @@
                   <p>Leading innovative software solutions</p>
                 </div>
               </div>
+              
               <div class="achievement-item">
                 <div class="achievement-icon">
                   <i class="fas fa-graduation-cap"></i>
@@ -218,6 +219,7 @@
                   <p>Online examination portal</p>
                 </div>
               </div>
+              
               <div class="achievement-item">
                 <div class="achievement-icon">
                   <i class="fas fa-robot"></i>
@@ -227,6 +229,45 @@
                   <p>CNN, NLP, and RAG systems</p>
                 </div>
               </div>
+              
+              <!-- Hidden achievements that show when expanded -->
+              <div class="achievement-item hidden-achievement">
+                <div class="achievement-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="achievement-content">
+                  <h5>Full-Stack Development</h5>
+                  <p>Built 10+ web applications using modern tech stack</p>
+                </div>
+              </div>
+              
+              <div class="achievement-item hidden-achievement">
+                <div class="achievement-icon">
+                  <i class="fas fa-database"></i>
+                </div>
+                <div class="achievement-content">
+                  <h5>Database Optimization</h5>
+                  <p>Improved database performance by 40%</p>
+                </div>
+              </div>
+              
+              <div class="achievement-item hidden-achievement">
+                <div class="achievement-icon">
+                  <i class="fas fa-users"></i>
+                </div>
+                <div class="achievement-content">
+                  <h5>Team Leadership</h5>
+                  <p>Led development teams in multiple projects</p>
+                </div>
+              </div>
+            </div>
+            
+            <!-- View More Button for Achievements -->
+            <div class="view-more-container">
+              <button class="view-more-btn achievements-view-more" onclick="toggleAchievements()">
+                <span class="view-more-text">View More</span>
+                <i class="fas fa-chevron-down view-more-icon"></i>
+              </button>
             </div>
           </div>
 
@@ -475,6 +516,7 @@
     <script src="js/custom.js"></script>
 
     <script>
+      // Skills Toggle Function - Only affects Skills Card
       function toggleSkills() {
         const skillsGrid = document.querySelector('.skills-card .skills-grid');
         const viewMoreBtn = document.querySelector('.skills-card .view-more-btn');
@@ -486,6 +528,23 @@
           viewMoreText.textContent = 'View More';
         } else {
           skillsGrid.classList.add('expanded');
+          viewMoreBtn.classList.add('expanded');
+          viewMoreText.textContent = 'View Less';
+        }
+      }
+      
+      // Achievements Toggle Function - Only affects Achievements Card
+      function toggleAchievements() {
+        const achievementsList = document.querySelector('.achievements-card .achievements-list');
+        const viewMoreBtn = document.querySelector('.achievements-card .view-more-btn');
+        const viewMoreText = document.querySelector('.achievements-card .view-more-text');
+        
+        if (achievementsList.classList.contains('expanded')) {
+          achievementsList.classList.remove('expanded');
+          viewMoreBtn.classList.remove('expanded');
+          viewMoreText.textContent = 'View More';
+        } else {
+          achievementsList.classList.add('expanded');
           viewMoreBtn.classList.add('expanded');
           viewMoreText.textContent = 'View Less';
         }
