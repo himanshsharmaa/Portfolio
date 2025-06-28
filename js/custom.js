@@ -22,43 +22,155 @@
       });
     });
 
-    // Animated text for roles
-    const roles = ["Full Stack Developer", "AI Architect", "ML Engineer"];
-    let roleIndex = 0;
-    let charIndex = 0;
+    // (Removed duplicate animated text for roles logic to avoid redeclaration error)
+
+    // Smooth scrolling for navigation links
+    $('a[href*="#"]').on('click', function(e) {
+        e.preventDefault();
+        
+        $('html, body').animate({
+            scrollTop: $($(this).attr('href')).offset().top - 80
+        }, 800, 'linear');
+    });
+
+    // Typing animation for roles
+    const roles = [
+        'Full Stack Developer',
+        'AI/ML Engineer', 
+        'Python Developer',
+        'Web Developer',
+        'Software Engineer'
+    ];
+    
+    let currentRole = 0;
+    let currentChar = 0;
     let isDeleting = false;
-    const rolesSpan = document.getElementById("roles");
-
-    function type() {
-      const currentRole = roles[roleIndex];
-      if (isDeleting) {
-        // Deleting
-        charIndex--;
-        rolesSpan.textContent = currentRole.substring(0, charIndex);
-        if (charIndex === 0) {
-          isDeleting = false;
-          roleIndex = (roleIndex + 1) % roles.length;
-          setTimeout(type, 500);
+    
+    function typeRole() {
+        const rolesElement = document.getElementById('roles');
+        const currentText = roles[currentRole];
+        
+        if (isDeleting) {
+            rolesElement.textContent = currentText.substring(0, currentChar - 1);
+            currentChar--;
         } else {
-          setTimeout(type, 100);
+            rolesElement.textContent = currentText.substring(0, currentChar + 1);
+            currentChar++;
         }
-      } else {
-        // Typing
-        charIndex++;
-        rolesSpan.textContent = currentRole.substring(0, charIndex);
-        if (charIndex === currentRole.length) {
-          isDeleting = true;
-          setTimeout(type, 2000);
-        } else {
-          setTimeout(type, 150);
+        
+        let typeSpeed = isDeleting ? 100 : 150;
+        
+        if (!isDeleting && currentChar === currentText.length) {
+            typeSpeed = 2000; // Pause at end
+            isDeleting = true;
+        } else if (isDeleting && currentChar === 0) {
+            isDeleting = false;
+            currentRole = (currentRole + 1) % roles.length;
+            typeSpeed = 500; // Pause before next word
         }
-      }
+        
+        setTimeout(typeRole, typeSpeed);
     }
+    
+    // Start typing animation
+    typeRole();
 
-    if (rolesSpan) {
-        document.addEventListener("DOMContentLoaded", function() { 
-            setTimeout(type, 200);
+    // Mobile menu toggle
+    $('.navbar-toggler').click(function() {
+        $(this).toggleClass('active');
+    });
+
+    // Close mobile menu when clicking on a link
+    $('.navbar-nav .nav-link').click(function() {
+        $('.navbar-collapse').collapse('hide');
+        $('.navbar-toggler').removeClass('active');
+    });
+
+    // Form submission
+    $('form').submit(function(e) {
+        e.preventDefault();
+        
+        // Basic form validation
+        let isValid = true;
+        $(this).find('input[required], textarea[required]').each(function() {
+            if ($(this).val().trim() === '') {
+                isValid = false;
+                $(this).addClass('error');
+            } else {
+                $(this).removeClass('error');
+            }
+        });
+        
+        if (isValid) {
+            // Show success message (you can replace this with actual form submission)
+            alert('Thank you for your message! I\'ll get back to you soon.');
+            this.reset();
+        } else {
+            alert('Please fill in all required fields.');
+        }
+    });
+
+    // Add animation classes when elements come into view
+    function animateOnScroll() {
+        $('.hero-title, .hero-subtitle, .social-links').each(function() {
+            if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+                $(this).addClass('animate__animated animate__fadeInUp');
+            }
+        });
+        
+        $('.about-card, .project-item').each(function() {
+            if ($(this).offset().top < $(window).scrollTop() + $(window).height() - 100) {
+                $(this).addClass('animate__animated animate__fadeInUp');
+            }
         });
     }
+    
+    $(window).scroll(animateOnScroll);
+    animateOnScroll(); // Run on page load
+});
 
-})(jQuery);
+// Skills View More Toggle Function
+function toggleSkills() {
+    const skillsGrid = document.querySelector('.skills-card .skills-grid');
+    const skillsBtn = document.querySelector('.skills-card .view-more-btn');
+    const skillsBtnText = skillsBtn.querySelector('.view-more-text');
+    const skillsBtnIcon = skillsBtn.querySelector('.view-more-icon');
+    
+    if (skillsGrid.classList.contains('expanded')) {
+        skillsGrid.classList.remove('expanded');
+        skillsBtnText.textContent = 'View More';
+        skillsBtn.classList.remove('expanded');
+    } else {
+        skillsGrid.classList.add('expanded');
+        skillsBtnText.textContent = 'View Less';
+        skillsBtn.classList.add('expanded');
+    }
+}
+
+// Achievements View More Toggle Function
+function toggleAchievements() {
+    const achievementsList = document.querySelector('.achievements-card .achievements-list');
+    const achievementsBtn = document.querySelector('.achievements-card .view-more-btn');
+    const achievementsBtnText = achievementsBtn.querySelector('.view-more-text');
+    const achievementsBtnIcon = achievementsBtn.querySelector('.view-more-icon');
+    
+    if (achievementsList.classList.contains('expanded')) {
+        achievementsList.classList.remove('expanded');
+        achievementsBtnText.textContent = 'View More';
+        achievementsBtn.classList.remove('expanded');
+    } else {
+        achievementsList.classList.add('expanded');
+        achievementsBtnText.textContent = 'View Less';
+        achievementsBtn.classList.add('expanded');
+    }
+}
+
+// Add error styling for form validation
+const style = document.createElement('style');
+style.textContent = `
+    .form-control.error {
+        border-color: #dc3545 !important;
+        box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
+    }
+`;
+document.head.appendChild(style);
