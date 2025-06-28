@@ -111,6 +111,13 @@ body::-webkit-scrollbar-thumb {
   height: 30px;
 }
 
+.navbar-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 /* Hero */
 .hero {
   padding: 4rem 0;
